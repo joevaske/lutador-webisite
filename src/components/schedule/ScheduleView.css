@@ -1,0 +1,15 @@
+.schedule-view {
+  padding: 20px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.schedule-view h3 {
+  text-align: left;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .schedule-view {
+    display: none;
+  }
+}

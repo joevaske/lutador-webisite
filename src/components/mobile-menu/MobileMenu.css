@@ -1,0 +1,117 @@
+.mobile-menu {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+.mobile-menu.open {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 1);
+  height: calc(100vh - 140px);
+  z-index: 100;
+}
+
+.mobile-menu.is-sticky {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.95);
+}
+.mobile-menu.is-sticky.open {
+  height: 100vh;
+}
+.nav-icon-wrapper {
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Hamburger Wrapper */
+.nav-icon {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+/* Lines */
+.nav-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 3px;
+  transition: 0.25s ease-in-out;
+  left: 0;
+}
+
+/* Line positions */
+.nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.nav-icon span:nth-child(2) {
+  top: 9px;
+}
+
+.nav-icon span:nth-child(3) {
+  top: 18px;
+}
+
+/* OPEN (Hamburger → X) */
+.nav-icon.open span:nth-child(1) {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.nav-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-icon.open span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+/* Main menu */
+
+.mobile-menu-list {
+  display: none;
+}
+
+.mobile-menu-list.open {
+  color: #f0f0f0;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.mobile-menu-list.open ul {
+  margin-top: 20px;
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+}
+.mobile-menu-list.open ul > li {
+  padding: 20px 10px;
+}
+.mobile-menu-list.open ul > li a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+.mobile-menu-list.open ul > li a:hover {
+  transform: scale(1.1);
+}

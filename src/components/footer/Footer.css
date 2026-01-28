@@ -1,0 +1,127 @@
+.footer {
+  background-image: url("../../images/backgrounds/footer/footer-bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 20px 20px 20px;
+  position: relative;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: #000000;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.52) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 1;
+}
+.footer-heading {
+  position: sticky;
+  z-index: 100;
+  margin-bottom: 40px;
+}
+.footer-heading-text h3 {
+  color: rgba(240, 240, 240, 0.7);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.footer-heading-line {
+  display: none;
+}
+.footer-heading-social-icons {
+  color: rgba(240, 240, 240, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.7rem;
+}
+.footer-heading-social-icons div {
+  border: 1px solid rgba(240, 240, 240, 0.7);
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-heading-social-icons div:hover {
+  background-color: #dd1111;
+  border: 1px solid #dd1111;
+}
+.footer-heading-social-icons div:not(:last-child) {
+  margin-right: 20px;
+}
+.footer-content {
+  position: sticky;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: auto;
+  z-index: 100;
+
+  text-align: center;
+}
+.footer-content h2 {
+  margin-bottom: 5px;
+  font-size: 5rem;
+  letter-spacing: 3px;
+}
+.footer-menu {
+  position: sticky;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 10px 0px 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.footer-menu-item {
+  font-family: "Rajdhani", "sans-serif";
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(240, 240, 240, 0.7);
+}
+.footer-footer {
+  position: sticky;
+  z-index: 100;
+  text-align: center;
+  margin: 40px 10px 0px 10px;
+}
+@media only screen and (min-width: 992px) {
+  .footer-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footer-heading-line {
+    display: block;
+    width: 40vw;
+    height: 2px;
+    border-top: 1px solid rgba(240, 240, 240, 0.3);
+  }
+  .footer-heading-text h3 {
+    margin-bottom: 0px;
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-menu {
+    max-width: 600px;
+  }
+  .footer-menu-item {
+    font-size: 2rem;
+  }
+}

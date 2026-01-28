@@ -1,0 +1,51 @@
+.promo-box {
+  color: #959595;
+  font-family: "Inter", sans-serif;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px;
+  cursor: crosshair;
+}
+.promo-count {
+  font-family: "Rajdhani", sans-serif;
+  color: #f0f0f0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.promo-mark {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #dd1111;
+}
+
+.promo-text {
+  font-size: 1rem;
+  word-spacing: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+  .promo-count {
+    font-size: 3.5rem;
+  }
+  .promo-mark {
+    font-size: 2rem;
+    padding: 3px;
+  }
+  .promo-text {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .promo-count {
+    font-size: 4.5rem;
+  }
+  .promo-mark {
+    font-size: 2.5rem;
+    padding: 5px;
+  }
+  .promo-text {
+    font-size: 1.4rem;
+  }
+}

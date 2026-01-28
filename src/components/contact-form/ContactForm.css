@@ -1,0 +1,54 @@
+.contact-form {
+  /*   background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  width: 320px; */
+}
+
+.contact-form-control {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.contact-form-control input,
+.contact-form-control textarea {
+  font-family: "Heebo", sans-serif;
+  font-size: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+
+  border-radius: 4px;
+  border: 0;
+  color: #f0f0f0;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  font-weight: 200;
+  outline: 0;
+}
+
+.contact-form-control label {
+  font-family: "Heebo", sans-serif;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: rgba(240, 240, 240, 0.4);
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  font-weight: 200;
+
+  transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.contact-form-control input:focus + label,
+.contact-form-control input:not(:placeholder-shown) + label,
+.contact-form-control textarea:focus + label,
+.contact-form-control textarea:not(:placeholder-shown) + label {
+  transform: translateY(-60px);
+  font-size: 12px;
+}

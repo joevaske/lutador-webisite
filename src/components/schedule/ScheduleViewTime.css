@@ -1,0 +1,19 @@
+.schedule-view-time {
+}
+
+.schedule-item {
+  /*   display: grid;
+  grid-template-columns: 1fr 1fr; */
+  text-align: left;
+  margin-bottom: 40px;
+  border-left: 2px solid #dd1111;
+  padding: 0 20px;
+}
+.schedule-item-name {
+  font-weight: 700;
+}
+.schedule-item-name,
+.schedule-item-name-time-count {
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+}
