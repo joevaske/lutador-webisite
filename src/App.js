@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
 import Loading from "./components/loading/Loading";
 import TestStranica from "./components/test-stranica/TestStranica";
@@ -11,6 +11,8 @@ import WhyChooseUs from "./components/why-choose-us/WhyChooseUs";
 import Testimonials from "./components/testimonials/Testimonials";
 import Schedule from "./components/schedule/Schedule";
 import Footer from "./components/footer/Footer";
+import GoTop from "./components/go-top/GoTop";
+import MatejaValjarevic from "./components/pages/mateja-valjarevic/MatejaValjarevic";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -24,6 +26,9 @@ const App = () => {
   return (
     <Router>
       <div className="App">
+        <Routes>
+          <Route path="/mateja-valjarevic" element={<MatejaValjarevic />} />
+        </Routes>
         <Header />
         <PromoStatistika />
         <AboutUs />
@@ -34,6 +39,7 @@ const App = () => {
         <ContactUs />
         {/*      <TestStranica /> */}
         <Footer />
+        <GoTop />
       </div>
     </Router>
   );

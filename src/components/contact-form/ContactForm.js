@@ -65,9 +65,9 @@ const ContactForm = () => {
       </div>
       <button
         type="submit"
-        className="btn btn-square btn-red btn-red-full-color"
+        className="btn btn-red btn-red-full-color btn-square btn-lg"
       >
-        Pošalji
+        <span>Pošalji</span>
       </button>
     </form>
   );

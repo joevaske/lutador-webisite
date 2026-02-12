@@ -19,8 +19,14 @@ body {
 
 body {
   background: url("../src/images/backgrounds/Lutador-Website-bg.webp");
-  background-repeat: repeat-y;
-  background-size: cover;
+  background-repeat: no-repeat; /* Prevents the image from tiling */
+  background-position: center; /* Centers the image horizontally and vertically */
+  background-size: cover; /* Scales the image to cover the entire container */
+  background-attachment: fixed;
+  /*  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-position: top left; */
+  /*   background-size: cover; */
 }
 
 @import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap);

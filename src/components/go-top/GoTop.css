@@ -1,0 +1,11 @@
+.go-top svg {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  color: rgba(221, 17, 17, 0.7);
+
+  z-index: 200;
+}

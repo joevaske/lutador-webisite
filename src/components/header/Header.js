@@ -61,10 +61,12 @@ const Header = () => {
 
       <MobileMenu />
       <div className="header-text-box">
-        <h1>Lutador BJJ</h1>
+        {/*    <h1>Lutador BJJ</h1> */}
+        <h1>Lutador</h1>
+        <h3> - Brazilian Jiu Jitsu - </h3>
         <h2>Snaga, disciplina, karakter</h2>
 
-        <button className="btn btn-red btn-outline btn-lg btn-rounded">
+        <button className="btn btn-red btn-outline btn-lg btn-square">
           <span>Zakaži probni trening</span>
         </button>
       </div>
