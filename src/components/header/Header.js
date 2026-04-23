@@ -1,4 +1,6 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
+
 import BgOne from "../../images/backgrounds/header/mateja-header-bg.webp";
 import BgTwo from "../../images/backgrounds/header/mateja-header-bg-2.webp";
 import BgTree from "../../images/backgrounds/header/mateja-header-bg-3.webp";
@@ -14,6 +16,14 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
+
+// This function calculates the target position minus the height of your fixed header
+const scrollWithOffset = (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  // Adjust the offset value (e.g., 64px) to match the height of your fixed header/navbar
+  const yOffset = -64;
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+};
 
 const Header = () => {
   return (
@@ -65,10 +75,15 @@ const Header = () => {
         <h1>Lutador</h1>
         <h3> - Brazilian Jiu Jitsu - </h3>
         <h2>Snaga, disciplina, karakter</h2>
-
-        <button className="btn btn-red btn-outline btn-lg btn-square">
+        <Link
+          className="btn btn-red btn-outline btn-lg btn-square"
+          smooth
+          to="/#contact"
+          scroll={scrollWithOffset}
+        >
+          {" "}
           <span>Zakaži probni trening</span>
-        </button>
+        </Link>{" "}
       </div>
       <PiArrowFatLinesDownFill className="arrow-down" />
     </div>

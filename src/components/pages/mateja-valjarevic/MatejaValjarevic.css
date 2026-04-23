@@ -1,0 +1,30 @@
+.mateja-valjarevic-rezultati {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mateja-valljarevic-obrazovanje {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+.mateja-valljarevic-obrazovanje .obrazovanje-card {
+  flex: 1;
+  background-color: #f0f0f01a;
+  padding: 20px;
+}
+.mateja-valljarevic-obrazovanje .obrazovanje-card h3 {
+  font-size: 1.2rem;
+  color: #dd1111;
+  margin-bottom: 10px;
+}
+.mateja-valljarevic-obrazovanje .obrazovanje-card h2 {
+  font-size: 1.8rem;
+  color: #f0f0f0;
+}

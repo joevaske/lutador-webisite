@@ -13,6 +13,7 @@ import Schedule from "./components/schedule/Schedule";
 import Footer from "./components/footer/Footer";
 import GoTop from "./components/go-top/GoTop";
 import MatejaValjarevic from "./components/pages/mateja-valjarevic/MatejaValjarevic";
+import HomePage from "./components/pages/HomePage";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -26,12 +27,14 @@ const App = () => {
   return (
     <Router>
       <div className="App">
+        {/*   <HomePage /> */}
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
         <Routes>
           <Route path="/mateja-valjarevic" element={<MatejaValjarevic />} />
         </Routes>
-        <Header />
-        <PromoStatistika />
-        <AboutUs />
+
         <Ponuda />
         <WhyChooseUs />
         <Testimonials />

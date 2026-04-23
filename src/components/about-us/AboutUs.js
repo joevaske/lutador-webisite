@@ -3,6 +3,7 @@ import matejaValjarevic from "../../images/about-us/mateja-profilna-1.webp";
 import FancyImage from "../ux-elements/fancy-image/FancyImage";
 import FadeInLeft from "../animations/FadeInLeft";
 import FadeInRight from "../animations/FadeInRight";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -25,9 +26,13 @@ const AboutUs = () => {
             karijere stvorio je brojne šampione i ostao aktivan takmičar
             posvećen razvoju sportista svih nivoa.
           </p>
-          <button className="btn btn-red btn-red-full-color btn-square btn-lg">
+
+          <Link
+            className="btn btn-red btn-red-full-color btn-square btn-lg"
+            to="/mateja-valjarevic"
+          >
             <span>Pročitaj više</span>
-          </button>
+          </Link>
         </div>
       </FadeInRight>
     </div>

@@ -1,6 +1,7 @@
 {
   "name": "website-2",
   "version": "0.1.0",
+  "homepage": "https://fenixmma.com/lutador",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
